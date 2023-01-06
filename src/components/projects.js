@@ -39,7 +39,12 @@ const Projects = () => {
                 <img src={closetab} alt="close" />
               </span>
             </div>
-            <iframe src={project.url} frameBorder={0} zoom="0.60"></iframe>
+            <iframe
+              title={project.name}
+              src={project.url}
+              frameBorder={0}
+              zoom="0.60"
+            ></iframe>
           </div>
         ))}
       </div>
