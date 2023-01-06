@@ -1,0 +1,45 @@
+{
+  "nickname": "W•T",
+  "name": "Al-waleed",
+  "bio": "A developer with a never-ending passion for learning. Onyx is my guitar, which I enjoy playing in my free time. Ember is my coffee machine and she starts my day everyday. Also, Clementine is my 3D printer, which creates a variety of three-dimensional objects. These hobbies show my diverse interests and dedication to pursuing my passions.",
+  "languages": [
+    {
+      "name": "Swift",
+      "desc": "My very first programming language, which I learned under the hands of Omar Al-Ibrahim at Kuwait Codes, in which I won the first place prize."
+    },
+    {
+      "name": "JavaScript",
+      "desc": "My second and favorite programming language."
+    },
+    {
+      "name": "Unity",
+      "desc": "..."
+    },
+    {
+      "name": "React/Native",
+      "desc": "..."
+    },
+    {
+      "name": "Flutter",
+      "desc": "..."
+    },
+    {
+      "name": "NodeJS",
+      "desc": "..."
+    }
+  ],
+  "projects": [
+    {
+      "name": "joinquotation",
+      "url": "https://joinquotation.netlify.app"
+    },
+    {
+      "name": "book-api",
+      "url": "https://book-api.netlify.app"
+    },
+    {
+      "name": "koalasurvey",
+      "url": "https://koalasurvey.netlify.app"
+    }
+  ]
+}

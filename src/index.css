@@ -1,13 +1,365 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Rubik:regular,bold,italic");
+@import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:regular,bold,extrabold,italic");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One:regular,bold,extrabold,italic");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background-color: #babd8d;
+  background-size: 64px 64px;
+  background-image: linear-gradient(to right, #f2ef915c 1px, transparent 1px),
+    linear-gradient(to bottom, #f2ef915c 1px, transparent 1px);
+  font-family: rubik;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+}
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Hero */
+section.hero {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 20vh;
+}
+section.hero .left h3 {
+  font-family: plus jakarta sans;
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 10px;
+  background-color: white;
+  width: 90px;
+  text-align: center;
+  border: 5px solid #3d3d3d;
+  position: relative;
+  top: 40px;
+  right: 30px;
+}
+section.hero .left div {
+  padding: 30px 40px;
+  background-color: white;
+  width: 600px;
+  border: 5px solid #3d3d3d;
+  box-shadow: 10px 10px 0px #3d3d3d;
+}
+/* section.hero .left div:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: relative;
+  border-left: 30px solid white;
+  border-bottom: 40px solid transparent;
+  right: -450px;
+  bottom: -30px;
+}
+*/
+section.hero .left div h1 {
+  font-family: rubik mono one;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 3;
+}
+section.hero .left div p {
+  font-family: rubik;
+  font-size: 18px;
+  font-weight: 300;
+}
+section.hero .left a {
+  font-family: rubik mono one;
+  color: #ffdac6;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 40px;
+  background-color: #fa9500;
+  border: 5px solid #fa9500;
+  box-shadow: 7px 7px 0px #3d3d3d;
+  border-radius: 15px;
+  position: relative;
+  left: 50px;
+  bottom: 10px;
+  text-decoration: none;
+}
+section.hero .left a img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+section.hero .right {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 10px 10px 0px #f2ef91;
+  width: 20%;
+}
+section.hero .right div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  border: 5px solid black;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  background-color: #f2ef91;
+  font-family: rubik mono one;
+  line-height: 0.5;
+}
+section.hero .right div img {
+  width: 30px;
+  height: 30px;
+}
+section.hero .right > img {
+  width: 100%;
+  border: 5px solid black;
+  box-shadow: 10px 10px 0px #f2ef91;
+}
+/* Languages & Frameworks */
+section.languages {
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section.languages > div {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+section.languages > div > img {
+  width: 30%;
+  position: relative;
+  margin-bottom: 10vh;
+}
+section.languages > div > img:nth-child(1) {
+  bottom: 20px;
+}
+section.languages > div > img:nth-child(2) {
+  right: 50px;
+  top: 10px;
+}
+section.languages .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+}
+section.languages .container div.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
+  margin: 50px 0;
+}
+section.languages .container div.card img {
+  width: 160px;
+  filter: drop-shadow(10px 10px 0px #7c6a0a);
+  -webkit-filter: drop-shadow(10px 10px 0px #7c6a0a);
+  position: relative;
+  bottom: 100px;
+}
+section.languages .container div.card div {
+  width: 450px;
+  background-color: white;
+  border: 5px solid #3d3d3d;
+  box-shadow: 10px 10px 0px #3d3d3d;
+  padding: 20px;
+}
+section.languages .container div.card div h1 {
+  font-family: rubik mono one;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 3;
+}
+section.languages .container div.card div p {
+  font-family: rubik;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* projects */
+section.projects {
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section.projects > img {
+  width: 75%;
+}
+section.projects .container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+section.projects .container .card {
+  width: 800px;
+  height: 400px;
+  margin: 50px 0;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 10px 10px 0px #3d3d3d;
+  overflow: hidden;
+  border: 5px solid #3d3d3d;
+}
+section.projects .container .card div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  /* border: 5px solid #3d3d3d; */
+  border-bottom: 5px solid #3d3d3d;
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  font-family: rubik mono one;
+  font-size: 12px;
+  color: #3d3d3d;
+  line-height: 0.5;
+}
+section.projects .container .card div img {
+  width: 30px;
+  height: 30px;
+}
+section.projects .container div.card iframe {
+  width: calc(100% + 265px);
+  height: 500px;
+  outline: none;
+  -ms-zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: 0 0;
+}
+section.projects > h1 {
+  font-family: rubik mono one;
+  color: #7c6a0a;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* iphone media query */
+@media only screen and (max-width: 600px) {
+  /* hero */
+  section.hero {
+    margin-top: 5vh;
+    width: 100%;
+  }
+  section.hero .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0;
+  }
+  section.hero .left h3 {
+    left: -35%;
+  }
+  section.hero .left div p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  section.hero .left a {
+    padding: 10px 20px;
+    left: -40px;
+    bottom: 20px;
+  }
+  section.hero .left a img {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+  }
+  section.hero .left div {
+    width: 80%;
+  }
+  section.hero .right {
+    width: 50%;
+  }
+  /* languages & framework */
+  section.languages {
+    width: 100%;
+  }
+  section.language div:first-child {
+    width: 90%;
+    border: 1px solid red;
+  }
+  section.languages > div > img {
+    width: 60%;
+    margin-bottom: 10vh;
+  }
+  section.languages > div > img:nth-child(1) {
+    left: 55px;
+    bottom: 40px;
+  }
+  section.languages > div > img:nth-child(2) {
+    right: 60px;
+    top: 30px;
+  }
+  section.languages .container {
+    align-items: center;
+    width: 100%;
+  }
+  section.languages .container div.card {
+    width: 80%;
+    margin: 70px 0;
+  }
+  section.languages .container div.card img {
+    width: 80px;
+  }
+  section.languages .container div.card div {
+    width: 225px;
+  }
+  section.languages .container div.card div h1 {
+    font-size: 18px;
+  }
+  section.languages .container div.card div p {
+    font-size: 15px;
+  }
+  /* projects */
+  section.projects {
+    margin: 15vh 0;
+    width: 100%;
+  }
+  section.projects > img {
+    width: 95%;
+  }
+  section.projects .container {
+    width: 100%;
+  }
+  section.projects .container .card {
+    width: 93%;
+    height: 300px;
+  }
+  section.projects .container div.card iframe {
+    width: calc(100% + 900px);
+    height: 100vh;
+    outline: none;
+    -ms-zoom: 0.5;
+    -moz-transform: scale(0.3);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.3);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.3);
+    -webkit-transform-origin: 0 0;
+  }
+  section.projects > h1 {
+    font-family: rubik mono one;
+    color: #7c6a0a;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 3;
+  }
 }
