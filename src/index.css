@@ -164,8 +164,7 @@ section.languages .container div.card {
 }
 section.languages .container div.card img {
   width: 160px;
-  filter: drop-shadow(10px 10px 0px #7c6a0a);
-  -webkit-filter: drop-shadow(10px 10px 0px #7c6a0a);
+
   position: relative;
   bottom: 100px;
 }

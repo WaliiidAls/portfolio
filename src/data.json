@@ -13,19 +13,19 @@
     },
     {
       "name": "Unity",
-      "desc": "..."
+      "desc": "Third thing I learned is game development using C#."
     },
     {
       "name": "React/Native",
-      "desc": "..."
+      "desc": "My favorite front-end JS framework! Funny thing is that I learned React Native before React and it was disastrous. "
     },
     {
       "name": "Flutter",
-      "desc": "..."
+      "desc": "Enjoyed this Dart framework because everything IS a widget. "
     },
     {
       "name": "NodeJS",
-      "desc": "..."
+      "desc": "Back-end stuff which I don’t really enjoy under stress. I use ExpressJS along with MongoDB to create APIs."
     }
   ],
   "projects": [

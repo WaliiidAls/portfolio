@@ -68,7 +68,14 @@ const Langs = (props) => {
             }}
             children={
               <>
-                <img src={images[lang.name]} alt={lang.name} />
+                <motion.img
+                  initial={{
+                    filter: "drop-shadow(10px 10px 0px #7c6a0a)",
+                    "-webkit-filter": "drop-shadow(10px 10px 0px #7c6a0a)",
+                  }}
+                  src={images[lang.name]}
+                  alt={lang.name}
+                />
                 <div>
                   <h1>{lang.name}</h1>
                   <p>{lang.desc}</p>
