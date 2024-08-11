@@ -14,15 +14,12 @@ const Hero = (props) => {
   const pfps = [pfp1, pfp2, pfp3];
   const [PFP, setPFP] = useState(1);
   // update pfp every 5 seconds
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setPFP((PFP) => (PFP + 1) % pfps.length);
-  //   }, 3000);
-  //   return () => clearInterval(interval);
-  // }, []);
   useEffect(() => {
-    // Your useEffect code here
-}, [pfps.length]);
+    const interval = setInterval(() => {
+      setPFP((PFP) => (PFP + 1) % pfps.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [pfps.length]);
 
   return (
     <section className="hero">
